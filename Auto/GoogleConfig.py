@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 GA_SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 SHEET_SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-KEY_FILE_LOCATION = 'GoogleConfig/gaforpython-f28f94d19c65.json'
+KEY_FILE_LOCATION = './gaforpython-f28f94d19c65.json'
 def get_ga():
   credentials = ServiceAccountCredentials.from_json_keyfile_name(
       KEY_FILE_LOCATION, GA_SCOPES)

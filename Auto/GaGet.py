@@ -7,7 +7,7 @@ def getMass_report(analytics, startDate, endDate, viewId):
         {
           'viewId': viewId,
           'dateRanges': [{'startDate': startDate, 'endDate': endDate}],
-          'samplingLevel': 'LARGE',
+          'samplingLevel': 'DEFAULT',
           'metrics': [{'expression': 'ga:sessions', 'alias': 'sess'}],
           'dimensions': [{'name': 'ga:sourceMedium'}, {'name': 'ga:campaign'}],
           'orderBys': [{'fieldName': 'ga:sessions', 'sortOrder': 'DESCENDING'}]
